@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavigationWrapperExample.MainPage">
+
+    <StackLayout>
+        <Button VerticalOptions="CenterAndExpand" Text="Go to another page" Clicked="Button_Clicked" Margin="20"></Button>
+        <Border BackgroundColor="Gray" VerticalOptions="EndAndExpand">
+            <Label Text="Your tabbar would go here but I'm too lazy to write something realistic"></Label>
+        </Border>
+    </StackLayout>
+
+
+</ContentPage>

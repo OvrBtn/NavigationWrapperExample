@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NavigationWrapperExample"
+             x:DataType="local:ContentPageWrapper"
+             Shell.PresentationMode="ModalNotAnimated"
+             BackgroundColor="Transparent"
+             x:Class="NavigationWrapperExample.ContentPageWrapper">
+
+    <ContentPage.ControlTemplate>
+        <ControlTemplate>
+
+            <Grid RowDefinitions="*,auto" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <ContentView Grid.Row="0" x:Name="animatedContentView" Content="{Binding AnimatedContent, Source={x:RelativeSource AncestorType={x:Type local:ContentPageWrapper}}}"></ContentView>
+                <ContentView Grid.Row="1" x:Name="staticContentView" Content="{Binding StaticContent, Source={x:RelativeSource AncestorType={x:Type local:ContentPageWrapper}}}"></ContentView>
+            </Grid>
+
+        </ControlTemplate>
+    </ContentPage.ControlTemplate>
+
+</ContentPage>

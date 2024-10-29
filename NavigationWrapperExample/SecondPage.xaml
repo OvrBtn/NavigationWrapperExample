@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:ContentPageWrapper xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NavigationWrapperExample"
+             x:Class="NavigationWrapperExample.SecondPage">
+
+    <local:ContentPageWrapper.AnimatedContent>
+        <StackLayout BackgroundColor="AntiqueWhite">
+            <Label Text="This is some animated content which looks like normal shell"></Label>
+            <Button Text="some button"></Button>
+        </StackLayout>
+    </local:ContentPageWrapper.AnimatedContent>
+
+    <local:ContentPageWrapper.StaticContent>
+        <Border BackgroundColor="Gray">
+            <Label Text="Your tabbar would go here but I'm too lazy to write something realistic"></Label>
+        </Border>
+    </local:ContentPageWrapper.StaticContent>
+
+</local:ContentPageWrapper>
